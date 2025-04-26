@@ -23,7 +23,8 @@ author_profile: true
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      {% include custom/pub-entry.html %}
+<!--       {% include archive-single.html %} -->
     {% endfor %}
   {% endfor %}
 {% else %}
