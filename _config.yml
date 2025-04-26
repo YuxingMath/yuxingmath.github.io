@@ -6,9 +6,23 @@
 # `jekyll serve -l -H localhost`. If you change this file, please restart the 
 # server process.
 
+
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji
+  - jekyll-redirect-from
+  - jekyll-include-cache
+
+
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default"
+# site_theme               : "default"
 title                    : "Yuxing Huang's Homepage"
 title_separator          : "-"
 name                     : &name "Yuxing Huang"
