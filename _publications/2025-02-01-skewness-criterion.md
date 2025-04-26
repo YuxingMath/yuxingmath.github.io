@@ -1,6 +1,7 @@
 ---
 title: "A Skewness-Based Criterion for Addressing Heteroscedastic Noise in Causal Discovery"
 collection: publications
+category: manuscripts 
 permalink: /publication/skewness-criterion
 date: 2025-02-01           
 authors: "Yingyu Lin, Yuxing Huang, Wenqin Liu, Haoran Deng, Ignavier Ng, Kun Zhang, Mingming Gong, Yian Ma, Biwei Huang"
