@@ -1,0 +1,19 @@
+---
+layout: academic
+---
+<article class="publication-detail">
+  <a class="back-link" href="{{ '/publications/' | relative_url }}"><span aria-hidden="true">←</span> All research</a>
+  <header class="paper-heading">
+    <p class="eyebrow">{{ page.venue | markdownify | strip_html | strip }} · {{ page.date | date: '%Y' }}</p>
+    <h1>{{ page.title }}</h1>
+    <div class="paper-authors">{{ page.authors | markdownify }}</div>
+    <div class="paper-links">
+      <a class="button" href="{{ page.paperurl }}">Read on arXiv <span aria-hidden="true">↗</span></a>
+      {% if page.proceedingsurl %}<a href="{{ page.proceedingsurl }}">Conference proceedings <span aria-hidden="true">↗</span></a>{% endif %}
+    </div>
+  </header>
+  <section class="prose paper-summary" aria-labelledby="overview-title">
+    <h2 id="overview-title">Overview</h2>
+    {{ content }}
+  </section>
+</article>

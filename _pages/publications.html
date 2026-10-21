@@ -1,37 +1,12 @@
 ---
-layout: archive
-title: "Publications"
+layout: academic
+title: "Research"
 permalink: /publications/
-author_profile: true
+description: "Research papers by Yuxing Huang in probability, signature methods, and causal discovery."
 ---
 
-<!-- {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %} -->
+<p class="page-intro">My research focuses on principal–agent problems, with broader interests in mean-field games and signature methods. My papers are listed below.</p>
 
-{% include base_path %}
+{% include publication-list.html heading='h2' %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include custom/pub-entry.html %}
-<!--       {% include archive-single.html %} -->
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+<p class="research-note">You can also find my work on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>

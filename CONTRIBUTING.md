@@ -1,8 +1,7 @@
-Contributions are welcome! 
+# Contributing
 
-Please add issues and make pull requests. There are no stupid questions. All ideas are welcome. This is a volunteer project. Be excellent to each other.
+This repository contains Yuxing Huang’s personal academic website.
 
-Bug reports and feature requests to the template  should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+Keep changes focused and preserve existing page and publication URLs. Academic details, paper titles, author lists, and links should be checked against the owner’s supplied information or primary sources. Do not add sample CV entries, unverified achievements, or placeholder downloads.
 
-Fork from master and go from there. Remember that this repository is intended to remain a generic, ready-to-fork template that demonstrates the features of academicpages.
-
+For content changes, see the file guide in `README.md`. Before submitting a pull request, build the site with `bundle exec jekyll build`, check changed pages at desktop and mobile widths, and verify affected links. Mention any checks that could not be completed.
