@@ -1,10 +1,15 @@
 ---
+layout: publication
 title: "A Skewness-Based Criterion for Addressing Heteroscedastic Noise in Causal Discovery"
-collection: publications          # 固定写法，不要改
-category: conferences             # 跟 _config.yml 里的 publication_category 对应
-date: 2025-05-01                  # 用于排序；随便选该年任一天
-authors: "Yingyu Lin, **Yuxing Huang**, Wenqin Liu, Haoran Deng, Ignavier Ng, Kun Zhang, Mingming Gong, Yian Ma, Biwei Huang"
+collection: publications
+category: conferences
+date: 2025-05-01
+year: 2025
+authors: "Yingyu Lin, **Yuxing Huang**, Wenqin Liu, Haoran Deng, Ignavier Ng, Kun Zhang, Mingming Gong, Yi-An Ma, Biwei Huang"
 venue: "ICLR 2025"
 paperurl: "https://arxiv.org/abs/2410.06407"
-# code: "https://github.com/yourrepo/skewness-criterion"   # <-- 有代码再加
+proceedingsurl: "https://proceedings.iclr.cc/paper_files/paper/2025/hash/de18052eb17cce56554a9637dd5aadba-Abstract-Conference.html"
+summary: "A score-based skewness criterion and the SkewScore algorithm for identifying causal directions when noise variance depends on the cause."
 ---
+
+We study causal discovery with heteroscedastic symmetric noise. A criterion based on the skewness of the score function distinguishes causal directions and forms the basis of SkewScore, an algorithm that avoids explicitly recovering the noise.

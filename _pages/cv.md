@@ -1,64 +1,34 @@
 ---
-layout: archive
-title: "CV"
+layout: academic
+title: "Curriculum vitae"
 permalink: /cv/
-author_profile: true
+description: "Academic background and research of Yuxing Huang, Ph.D. student at New York University."
 redirect_from:
   - /resume
+  - /resume/
+  - /cv-json/
 ---
 
-{% include base_path %}
+<p class="page-intro">Yuxing Huang · 黄宇星<br>Ph.D. student in mathematical finance, New York University</p>
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+<button type="button" class="button button-secondary" data-print hidden>Print / save as PDF</button>
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## Education
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+<ul class="education-list">
+  <li><h3>New York University</h3><p>Ph.D. studies, Department of Finance and Risk Engineering<br>Advisor: <a href="https://engineering.nyu.edu/faculty/nizar-touzi">Nizar Touzi</a></p></li>
+  <li><h3>École Polytechnique</h3><p>Ingénieur degree (M.S. level), Applied Mathematics</p></li>
+  <li><h3>Zhejiang University</h3><p>B.S. in Mathematics, Chu Kochen Honors College</p></li>
+</ul>
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Research interests
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+Principal–agent problems, mean-field games, and signature methods.
+
+## Publications and preprints
+
+{% include publication-list.html %}
+
+## Contact
+
+[yh6004@nyu.edu](mailto:yh6004@nyu.edu) · [Google Scholar](https://scholar.google.com/citations?user=cfIO29cAAAAJ&hl=en) · [GitHub](https://github.com/YuxingMath)
