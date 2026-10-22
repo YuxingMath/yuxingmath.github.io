@@ -14,11 +14,14 @@ The page has a profile sidebar, a short biography, and three anchor-linked secti
 | Papers | `_publications/` |
 | Teaching entries | `_data/teaching.yml` |
 | Profile links and portrait | `_config.yml` |
+| Downloadable CV | `assets/pdf/CV_yuxing.pdf` |
 | Layout and colours | `_layouts/academic.html`, `assets/css/academic.css` |
 
 Paper entries use `category: preprints`, `category: journals`, or `category: conferences`. The Publications section combines journals and conferences. Set `coauthors` to the other authors, keeping their order, and `year` to the work's year, displayed after the coauthors. For a forthcoming article, retain its preprint year without inventing a journal publication date. Titles link directly to the proceedings when available, otherwise to the paper. Journal entries can specify `venue` and `status`. The Principal-Agent preprint is linked to arXiv:2608.22818; the signature paper is listed as forthcoming in The Annals of Applied Probability, as confirmed by the journal's future-papers list.
 
 The skewness paper appears in Publications with its ICLR 2025 venue. Its old URL still redirects to the ICLR proceedings. The previous `#journal-publications` anchor remains valid on the Publications heading.
+
+The sidebar's Curriculum vitae link opens the uploaded PDF at `assets/pdf/CV_yuxing.pdf`. Replace that file to update the CV; the uploaded PDF is served unchanged.
 
 Teaching entries in `_data/teaching.yml` specify the course title, code, role, level, and term. The current entry records Mathematics in Financial Engineering (FRE-UY 3523 A), Fall 2026, as an undergraduate course with the Instructor role.
 

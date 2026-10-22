@@ -1,6 +1,6 @@
 title: Yuxing Huang
 name: Yuxing Huang
-description: "Yuxing Huang — Ph.D. student in mathematical finance at New York University. Research in principal–agent problems, mean-field games, and signature methods."
+description: "Yuxing Huang — Ph.D. student at New York University. Research in stochastic control and backward stochastic differential equations (BSDEs), with applications to economics and finance."
 url: https://yuxingmath.github.io
 baseurl: ""
 repository: YuxingMath/yuxingmath.github.io
@@ -15,7 +15,7 @@ author:
   avatar: /images/yuxing_3.jpg
   email: yh6004@nyu.edu
   googlescholar: https://scholar.google.com/citations?user=cfIO29cAAAAJ&hl=en
-  github: https://github.com/YuxingMath
+  cv: /assets/pdf/CV_yuxing.pdf
 
 markdown: kramdown
 highlighter: rouge
