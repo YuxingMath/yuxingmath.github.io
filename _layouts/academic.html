@@ -27,8 +27,7 @@
           <a class="profile-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
           <div class="profile-links">
             <a href="{{ site.author.googlescholar | escape }}">Google Scholar</a>
-            <span aria-hidden="true">·</span>
-            <a href="{{ site.author.github }}">GitHub</a>
+            <a href="{{ site.author.cv | relative_url }}" type="application/pdf">Curriculum vitae</a>
           </div>
         </div>
       </aside>
