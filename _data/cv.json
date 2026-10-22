@@ -47,13 +47,19 @@
   ],
   "publications": [
     {
+      "name": "Backward SDE characterization of the finite horizon Principal-Agent problem",
+      "publisher": "Preprint",
+      "releaseDate": "2026-08-24",
+      "website": "https://arxiv.org/abs/2608.22818"
+    },
+    {
       "name": "A Skewness-Based Criterion for Addressing Heteroscedastic Noise in Causal Discovery",
       "publisher": "ICLR 2025",
       "website": "https://arxiv.org/abs/2410.06407"
     },
     {
       "name": "Path-dependent processes from signatures",
-      "publisher": "Preprint",
+      "publisher": "The Annals of Applied Probability, to appear",
       "website": "https://arxiv.org/abs/2407.04956"
     }
   ]

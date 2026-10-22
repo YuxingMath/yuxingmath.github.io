@@ -1,48 +1,30 @@
 # Yuxing Huang’s academic website
 
-Personal website for Yuxing Huang, a Ph.D. student in mathematical finance at New York University.
+A single-page academic website hosted at [yuxingmath.github.io](https://yuxingmath.github.io/), built with Jekyll for GitHub Pages.
 
-**Website:** [yuxingmath.github.io](https://yuxingmath.github.io/)
+The page has a profile sidebar, a short biography, and three anchor-linked sections: Preprints, Journal publications, and Teaching. Light purple accents complement the simple layout. Names and affiliations are not repeated in a header or footer.
 
-The site uses Jekyll and is hosted on GitHub Pages. The layout pairs a compact profile column with readable academic content, with dedicated research, CV, and contact pages. On small screens the profile moves above the navigation. Research summaries expand without JavaScript.
-
-## Editing content
+## Editing
 
 | Content | File |
 | --- | --- |
-| Biography and research interests | `_pages/about.md` |
-| Research page | `_pages/publications.html` |
-| CV | `_pages/cv.md` |
-| Contact details | `_pages/contact.md` |
-| Publication entries | `_publications/` |
-| Site identity and author details | `_config.yml` |
-| Navigation | `_data/navigation.yml` |
-| Structured CV data | `_data/cv.json` |
+| Biography | `_pages/about.md` |
+| Page sections | `_layouts/home.html` |
+| Section links | `_data/navigation.yml` |
+| Papers | `_publications/` |
+| Teaching entries | `_data/teaching.yml` |
+| Profile links and portrait | `_config.yml` |
+| Layout and colours | `_layouts/academic.html`, `assets/css/academic.css` |
 
-Publication entries are Markdown files with YAML front matter. Keep existing filenames so that links to individual papers remain stable. A new entry can follow this structure:
+Paper entries use `category: preprints` or `category: journals`. Set `coauthors` to the other authors, keeping their order. Titles link directly to the paper. Journal entries can specify `venue` and `status`; do not invent a publication year for forthcoming articles. The Principal-Agent preprint is linked to arXiv:2608.22818; the signature paper is listed as forthcoming in The Annals of Applied Probability, as confirmed by the journal's future-papers list.
 
-```yaml
----
-layout: publication
-title: "Paper title"
-collection: publications
-category: preprints
-date: YYYY-MM-DD
-year: YYYY
-authors: "Author One, **Yuxing Huang**"
-venue: "Preprint"
-paperurl: "https://arxiv.org/abs/…"
-summary: "A short description of the paper."
----
+The conference paper remains in the repository and its old URL redirects to the ICLR proceedings. It is not misclassified as a journal publication or listed under a fourth section.
 
-A concise overview of the paper.
-```
+Teaching currently records the confirmed TA role. Add `course` and `term` to entries in `_data/teaching.yml` when those details are available.
 
-Use `category: conferences` for conference papers. Add `proceedingsurl` when an official proceedings page is available. Use confirmed publication details and avoid placeholder links or unsupported dates.
+Old About, CV, Contact, Research, Teaching, and paper URLs are redirect-only compatibility routes. They do not create additional content pages. The 404 page provides a way back to the homepage.
 
-The CV page can be printed or saved as a PDF using its print button. Update `_data/cv.json` alongside the visible CV if the academic background changes.
-
-## Preview locally
+## Build
 
 With Ruby and Bundler installed:
 
@@ -51,18 +33,6 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Open `http://localhost:4000`. To check a production build:
+For a production build, run `bundle exec jekyll build`. Check the three section anchors, paper links, mobile layout, and old-URL redirects before merging. No JavaScript is required by the page.
 
-```sh
-bundle exec jekyll build
-```
-
-Check the homepage, research, individual papers, CV, contact, and 404 page at both desktop and mobile widths. Confirm that internal links and publication links work before merging changes.
-
-## Deployment
-
-GitHub Pages publishes the site from the configured repository branch. Deployment status is available in the repository’s Actions tab. The canonical public address is `https://yuxingmath.github.io/`.
-
-## Credits
-
-This repository began with the [Academic Pages](https://github.com/academicpages/academicpages.github.io) template. The original MIT license is retained in `LICENSE`.
+GitHub Pages publishes from the configured repository branch. This repository began with the Academic Pages template; its MIT license is retained in `LICENSE`.
