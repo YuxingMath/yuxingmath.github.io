@@ -6,7 +6,7 @@ category: conferences
 redirect_to: "https://proceedings.iclr.cc/paper_files/paper/2025/hash/de18052eb17cce56554a9637dd5aadba-Abstract-Conference.html"
 sitemap: false
 date: 2025-05-01
-year: 2025
+year: 2024
 authors: "Yingyu Lin, **Yuxing Huang**, Wenqin Liu, Haoran Deng, Ignavier Ng, Kun Zhang, Mingming Gong, Yi-An Ma, Biwei Huang"
 coauthors: "Yingyu Lin, Wenqin Liu, Haoran Deng, Ignavier Ng, Kun Zhang, Mingming Gong, Yi-An Ma, and Biwei Huang"
 venue: "ICLR 2025"
