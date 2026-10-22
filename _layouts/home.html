@@ -1,7 +1,10 @@
 ---
 layout: academic
 ---
-<div class="biography">{{ content }}</div>
+<section class="biography" aria-labelledby="about-title">
+  <h2 id="about-title">About me</h2>
+  {{ content }}
+</section>
 <nav class="section-nav" aria-label="Page sections">
   {% for item in site.data.navigation.main %}<a href="{{ item.url }}">{{ item.title }}</a>{% endfor %}
 </nav>
