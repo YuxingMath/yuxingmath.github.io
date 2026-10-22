@@ -4,11 +4,11 @@ layout: academic
 <article class="publication-detail">
   <a class="back-link" href="{{ '/publications/' | relative_url }}"><span aria-hidden="true">←</span> All research</a>
   <header class="paper-heading">
-    <p class="eyebrow">{{ page.venue | markdownify | strip_html | strip }} · {{ page.date | date: '%Y' }}</p>
+    <p class="publication-meta">{{ page.venue | markdownify | strip_html | strip }}{% assign year_label = page.date | date: '%Y' %}{% unless page.venue contains year_label %} · {{ page.date | date: '%Y' }}{% endunless %}</p>
     <h1>{{ page.title }}</h1>
     <div class="paper-authors">{{ page.authors | markdownify }}</div>
     <div class="paper-links">
-      <a class="button" href="{{ page.paperurl }}">Read on arXiv <span aria-hidden="true">↗</span></a>
+      <a href="{{ page.paperurl }}">Read on arXiv <span aria-hidden="true">↗</span></a>
       {% if page.proceedingsurl %}<a href="{{ page.proceedingsurl }}">Conference proceedings <span aria-hidden="true">↗</span></a>{% endif %}
     </div>
   </header>
