@@ -20,7 +20,7 @@ Paper entries use `category: preprints`, `category: journals`, or `category: con
 
 The skewness paper appears in Publications with its ICLR 2025 venue. Its old URL still redirects to the ICLR proceedings. The previous `#journal-publications` anchor remains valid on the Publications heading.
 
-Teaching entries in `_data/teaching.yml` specify the course title, code, role, level, and term. The current entry records Mathematics in Financial Engineering (FRE-UY 3523 A), Fall 2026, as an undergraduate course with the Teaching Assistant role.
+Teaching entries in `_data/teaching.yml` specify the course title, code, role, level, and term. The current entry records Mathematics in Financial Engineering (FRE-UY 3523 A), Fall 2026, as an undergraduate course with the Instructor role.
 
 Old About, CV, Contact, Research, Teaching, and paper URLs are redirect-only compatibility routes. They do not create additional content pages. The 404 page provides a way back to the homepage.
 
