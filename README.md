@@ -4,7 +4,7 @@ Personal website for Yuxing Huang, a Ph.D. student in mathematical finance at Ne
 
 **Website:** [yuxingmath.github.io](https://yuxingmath.github.io/)
 
-The site uses Jekyll and is hosted on GitHub Pages. Its layout is designed for readable academic content on desktop and mobile, with dedicated research, CV, and contact pages.
+The site uses Jekyll and is hosted on GitHub Pages. The layout pairs a compact profile column with readable academic content, with dedicated research, CV, and contact pages. On small screens the profile moves above the navigation. Research summaries expand without JavaScript.
 
 ## Editing content
 

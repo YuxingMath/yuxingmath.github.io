@@ -3,19 +3,24 @@
 <ol class="publication-list">
   {% for paper in papers %}
   <li class="publication-entry">
-    <div class="publication-meta">
-      <span class="publication-year">{{ paper.date | date: '%Y' }}</span>
-      <span class="publication-venue">{{ paper.venue | markdownify | strip_html | strip }}</span>
-    </div>
     <article>
+      <div class="publication-meta">
+        <span class="publication-venue">{{ paper.venue | markdownify | strip_html | strip }}</span>
+        {% assign year_label = paper.date | date: '%Y' %}{% unless paper.venue contains year_label %}<span class="publication-year">{{ paper.date | date: '%Y' }}</span>{% endunless %}
+      </div>
       <{{ heading }}><a href="{{ paper.url | relative_url }}">{{ paper.title }}</a></{{ heading }}>
       <div class="paper-authors">{{ paper.authors | markdownify }}</div>
-      {% unless include.compact %}{% if paper.summary %}<p class="publication-summary">{{ paper.summary }}</p>{% endif %}{% endunless %}
       <div class="paper-links">
         <a href="{{ paper.paperurl }}" aria-label="Read {{ paper.title | escape }} on arXiv">arXiv <span aria-hidden="true">↗</span></a>
         {% if paper.proceedingsurl %}<a href="{{ paper.proceedingsurl }}" aria-label="Conference proceedings for {{ paper.title | escape }}">Proceedings <span aria-hidden="true">↗</span></a>{% endif %}
-        <a href="{{ paper.url | relative_url }}" aria-label="Overview of {{ paper.title | escape }}">Overview <span aria-hidden="true">→</span></a>
+        <a href="{{ paper.url | relative_url }}" aria-label="Details of {{ paper.title | escape }}">Details <span aria-hidden="true">→</span></a>
       </div>
+      {% unless include.compact %}{% if paper.summary %}
+      <details class="paper-summary-toggle">
+        <summary>Summary</summary>
+        <p>{{ paper.summary }}</p>
+      </details>
+      {% endif %}{% endunless %}
     </article>
   </li>
   {% endfor %}

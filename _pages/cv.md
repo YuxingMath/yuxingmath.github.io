@@ -27,7 +27,7 @@ Principal–agent problems, mean-field games, and signature methods.
 
 ## Publications and preprints
 
-{% include publication-list.html %}
+{% include publication-list.html compact=true %}
 
 ## Contact
 

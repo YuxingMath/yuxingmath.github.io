@@ -1,27 +1,14 @@
 ---
 layout: academic
 ---
-<section class="intro" aria-labelledby="intro-title">
-  <div class="intro-copy">
-    <p class="eyebrow">Mathematical finance · New York University</p>
-    <h1 id="intro-title">Yuxing Huang <span lang="zh" class="chinese-name">黄宇星</span></h1>
-    <p class="intro-role">Ph.D. Student in Mathematical Finance</p>
-    <div class="prose intro-prose">{{ content }}</div>
-    <div class="profile-links" aria-label="Academic profiles">
-      <a class="button" href="{{ '/publications/' | relative_url }}">Explore my research <span aria-hidden="true">↗</span></a>
-      <a href="{{ site.author.googlescholar | escape }}">Google Scholar <span aria-hidden="true">↗</span></a>
-      <a href="mailto:{{ site.author.email }}">Email <span aria-hidden="true">↗</span></a>
-    </div>
-  </div>
-  <figure class="portrait">
-    <img src="{{ site.author.avatar | relative_url }}" alt="Portrait of Yuxing Huang" width="1600" height="1600" fetchpriority="high">
-    <figcaption><span lang="zh">黄宇星</span><span>New York University</span></figcaption>
-  </figure>
+<section class="biography" aria-labelledby="about-title">
+  <header class="page-heading"><h1 id="about-title">About me</h1></header>
+  <div class="prose">{{ content }}</div>
 </section>
 <section class="research-section" aria-labelledby="selected-research">
   <div class="section-heading">
-    <div><p class="eyebrow">Papers &amp; preprints</p><h2 id="selected-research">Selected research</h2></div>
-    <a class="text-link" href="{{ '/publications/' | relative_url }}">All research <span aria-hidden="true">↗</span></a>
+    <h2 id="selected-research">Selected research</h2>
+    <a href="{{ '/publications/' | relative_url }}">All papers <span aria-hidden="true">→</span></a>
   </div>
   {% include publication-list.html compact=true %}
 </section>
