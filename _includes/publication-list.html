@@ -1,11 +1,15 @@
-{% assign papers = site.publications | where: 'category', include.category | sort: 'date' | reverse %}
+{% if include.category == 'publications' %}
+  {% assign papers = site.publications | where_exp: 'paper', "paper.category == 'journals' or paper.category == 'conferences'" | sort: 'date' | reverse %}
+{% else %}
+  {% assign papers = site.publications | where: 'category', include.category | sort: 'date' | reverse %}
+{% endif %}
 <ol class="publication-list">
   {% for paper in papers %}
   <li class="publication-entry">
     <article>
-      <h3><a href="{{ paper.paperurl }}">{{ paper.title }}</a></h3>
-      <p class="paper-coauthors">with {{ paper.coauthors }}{% if paper.category == 'preprints' %} ({{ paper.year }}){% endif %}</p>
-      {% if paper.category == 'journals' %}<p class="paper-venue"><em>{{ paper.venue }}</em>{% if paper.status %}, {{ paper.status }}{% endif %}</p>{% endif %}
+      <h3><a href="{{ paper.proceedingsurl | default: paper.paperurl }}">{{ paper.title }}</a></h3>
+      <p class="paper-coauthors">with {{ paper.coauthors }}{% if paper.year %} ({{ paper.year }}){% endif %}</p>
+      {% if paper.venue %}<p class="paper-venue"><em>{{ paper.venue }}</em>{% if paper.status %}, {{ paper.status }}{% endif %}</p>{% endif %}
     </article>
   </li>
   {% endfor %}

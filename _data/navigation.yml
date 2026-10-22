@@ -1,7 +1,7 @@
 main:
   - title: Preprints
     url: '#preprints'
-  - title: Journal publications
-    url: '#journal-publications'
+  - title: Publications
+    url: '#publications'
   - title: Teaching
     url: '#teaching'
