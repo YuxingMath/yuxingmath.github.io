@@ -1,2 +1,5 @@
-# Add verified course names and terms when available; do not use sample entries.
-- role: Teaching assistant
+- course: Mathematics in Financial Engineering
+  code: FRE-UY 3523 A
+  role: Teaching Assistant
+  level: Undergraduate course
+  term: Fall 2026

@@ -9,15 +9,18 @@ layout: academic
   <h2 id="preprints-title">Preprints</h2>
   {% include publication-list.html category='preprints' %}
 </section>
-<section id="journal-publications" class="academic-section" aria-labelledby="journals-title">
-  <h2 id="journals-title">Journal publications</h2>
-  {% include publication-list.html category='journals' %}
+<section id="publications" class="academic-section" aria-labelledby="journal-publications">
+  <h2 id="journal-publications">Publications</h2>
+  {% include publication-list.html category='publications' %}
 </section>
 <section id="teaching" class="academic-section" aria-labelledby="teaching-title">
   <h2 id="teaching-title">Teaching</h2>
   <ul class="teaching-list">
     {% for entry in site.data.teaching %}
-    <li>{% if entry.course %}<span class="course-name">{{ entry.course }}</span> · {% endif %}{{ entry.role }}{% if entry.term %}, {{ entry.term }}{% endif %}</li>
+    <li>
+      <span class="course-name">{{ entry.course }}{% if entry.code %} ({{ entry.code }}){% endif %}</span>
+      <p class="teaching-details">{{ entry.role }}{% if entry.level %} · {{ entry.level }}{% endif %}{% if entry.term %} · {{ entry.term }}{% endif %}</p>
+    </li>
     {% endfor %}
   </ul>
 </section>

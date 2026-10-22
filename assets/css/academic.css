@@ -31,7 +31,7 @@ h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: 400; line-height
 .section-nav { display: flex; flex-wrap: wrap; gap: 8px 25px; align-items: center; padding: 12px 17px; margin: 30px 0 34px; background: var(--light-purple); border-radius: 3px; font-size: 14px; }
 .section-nav a { padding-block: 3px; }
 .academic-section { margin-top: 34px; scroll-margin-top: 25px; }
-.academic-section h2 { font-size: 27px; border-bottom: 1px solid var(--lavender); padding-bottom: 10px; color: #554261; }
+.academic-section h2 { font-size: 27px; border-bottom: 1px solid var(--lavender); padding-bottom: 10px; color: #554261; scroll-margin-top: 25px; }
 .publication-list { list-style: none; margin: 0; padding: 0; }
 .publication-entry { padding-top: 22px; }
 .publication-entry + .publication-entry { margin-top: 4px; }
@@ -42,6 +42,7 @@ h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: 400; line-height
 .teaching-list { margin: 19px 0 0; padding-left: 20px; font-size: 16px; }
 .teaching-list li { padding-left: 3px; margin-bottom: 9px; }
 .course-name { font-weight: 500; }
+.teaching-details { margin: 3px 0 0; color: var(--muted); font-size: 14px; }
 .skip-link { position: absolute; top: -100px; left: 20px; padding: 8px 15px; background: #554261; color: white; z-index: 5; }
 .skip-link:focus { top: 12px; }
 .main-content > h2 { font-size: 28px; margin-bottom: 20px; }
