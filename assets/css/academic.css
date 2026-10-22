@@ -37,6 +37,7 @@ h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: 400; line-height
 .publication-entry { padding-top: 22px; }
 .publication-entry + .publication-entry { margin-top: 4px; }
 .publication-entry h3 { font-size: 22px; line-height: 1.5; margin-bottom: 8px; }
+.publication-entry h3 a { color: var(--ink); }
 .paper-coauthors, .paper-venue { font-size: 14px; line-height: 1.85; margin: 0; }
 .paper-coauthors { color: var(--muted); }
 .paper-venue { margin-top: 4px; color: var(--ink); }
