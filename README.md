@@ -23,7 +23,7 @@ The skewness paper appears in Publications with its ICLR 2025 venue. Its old URL
 
 The sidebar's Curriculum vitae link opens the uploaded PDF at `assets/pdf/CV_yuxing.pdf`. Replace that file to update the CV; the uploaded PDF is served unchanged.
 
-Teaching entries in `_data/teaching.yml` specify the course title, code, role, level, and term. The current entry records Mathematics in Financial Engineering (FRE-UY 3523 A), Fall 2026, as an undergraduate course with the Instructor role.
+Teaching entries in `_data/teaching.yml` specify the course title, code, role, and term. The current entry records Mathematics in Financial Engineering (FRE-UY 3523 A), with Instructor and Fall 2026 on the secondary line.
 
 Old About, CV, Contact, Research, Teaching, and paper URLs are redirect-only compatibility routes. They do not create additional content pages. The 404 page provides a way back to the homepage.
 
