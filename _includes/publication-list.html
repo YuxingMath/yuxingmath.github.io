@@ -1,5 +1,7 @@
 {% if include.category == 'publications' %}
-  {% assign papers = site.publications | where_exp: 'paper', "paper.category == 'journals' or paper.category == 'conferences'" | sort: 'date' | reverse %}
+  {% assign journals = site.publications | where: 'category', 'journals' %}
+  {% assign conferences = site.publications | where: 'category', 'conferences' %}
+  {% assign papers = journals | concat: conferences | sort: 'date' | reverse %}
 {% else %}
   {% assign papers = site.publications | where: 'category', include.category | sort: 'date' | reverse %}
 {% endif %}
