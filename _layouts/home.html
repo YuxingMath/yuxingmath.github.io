@@ -1,14 +1,23 @@
 ---
 layout: academic
 ---
-<section class="biography" aria-labelledby="about-title">
-  <header class="page-heading"><h1 id="about-title">About me</h1></header>
-  <div class="prose">{{ content }}</div>
+<div class="biography">{{ content }}</div>
+<nav class="section-nav" aria-label="Page sections">
+  {% for item in site.data.navigation.main %}<a href="{{ item.url }}">{{ item.title }}</a>{% endfor %}
+</nav>
+<section id="preprints" class="academic-section" aria-labelledby="preprints-title">
+  <h2 id="preprints-title">Preprints</h2>
+  {% include publication-list.html category='preprints' %}
 </section>
-<section class="research-section" aria-labelledby="selected-research">
-  <div class="section-heading">
-    <h2 id="selected-research">Selected research</h2>
-    <a href="{{ '/publications/' | relative_url }}">All papers <span aria-hidden="true">→</span></a>
-  </div>
-  {% include publication-list.html compact=true %}
+<section id="journal-publications" class="academic-section" aria-labelledby="journals-title">
+  <h2 id="journals-title">Journal publications</h2>
+  {% include publication-list.html category='journals' %}
+</section>
+<section id="teaching" class="academic-section" aria-labelledby="teaching-title">
+  <h2 id="teaching-title">Teaching</h2>
+  <ul class="teaching-list">
+    {% for entry in site.data.teaching %}
+    <li>{% if entry.course %}<span class="course-name">{{ entry.course }}</span> · {% endif %}{{ entry.role }}{% if entry.term %}, {{ entry.term }}{% endif %}</li>
+    {% endfor %}
+  </ul>
 </section>

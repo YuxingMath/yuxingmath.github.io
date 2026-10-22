@@ -59,7 +59,6 @@ exclude:
   - _pages/tag-archive.html
   - _pages/talkmap.html
   - _pages/talks.html
-  - _pages/teaching.html
   - _pages/terms.md
   - _pages/year-archive.html
 collections:

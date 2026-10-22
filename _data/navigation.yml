@@ -1,9 +1,7 @@
 main:
-  - title: About
-    url: /
-  - title: Research
-    url: /publications/
-  - title: CV
-    url: /cv/
-  - title: Contact
-    url: /contact/
+  - title: Preprints
+    url: '#preprints'
+  - title: Journal publications
+    url: '#journal-publications'
+  - title: Teaching
+    url: '#teaching'
