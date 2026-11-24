@@ -27,3 +27,15 @@ layout: academic
     {% endfor %}
   </ul>
 </section>
+<section id="education" class="academic-section" aria-labelledby="education-title">
+  <h2 id="education-title">Education</h2>
+  <ul class="education-list" role="list">
+    {% for school in site.data.education %}
+    <li>
+      <img class="education-logo" src="{{ school.logo | relative_url }}" alt="" width="128" height="84" loading="lazy" decoding="async">
+      <span class="education-name">{{ school.name | escape }}</span>
+      <span class="education-period">{{ school.period | escape }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
