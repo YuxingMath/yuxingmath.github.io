@@ -35,6 +35,19 @@
         {% if page.url == '/404.html' %}<h2>{{ page.title }}</h2>{% endif %}
         {{ content }}
       </main>
+      {% if page.url == '/' %}
+      <footer id="education" class="education-footer" aria-label="Education">
+        <ul class="education-list" role="list">
+          {% for school in site.data.education %}
+          <li>
+            <img class="education-logo" src="{{ school.logo | relative_url }}" alt="" width="128" height="84" loading="lazy" decoding="async">
+            <span class="education-name">{{ school.name | escape }}</span>
+            <span class="education-period">{{ school.period | escape }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </footer>
+      {% endif %}
     </div>
   </body>
 </html>
