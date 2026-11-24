@@ -45,12 +45,12 @@ h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: 400; line-height
 .teaching-list li { padding-left: 3px; margin-bottom: 9px; }
 .course-name { font-weight: 500; }
 .teaching-details { margin: 3px 0 0; color: var(--muted); font-size: 14px; }
-.education-footer { grid-column: 1 / -1; margin-top: 46px; }
+.education-footer { grid-column: 1 / -1; margin-top: clamp(64px, 8vw, 96px); }
 .education-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 6px clamp(8px, 2vw, 24px);
-  width: min(760px, 100%);
+  gap: 6px clamp(8px, 3vw, 40px);
+  width: min(920px, 100%);
   margin: 0 auto;
   padding: 0;
   list-style: none;
